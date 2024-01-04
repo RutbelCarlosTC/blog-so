@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi site/Universidad</title>
+    <link rel="stylesheet" href="../estilos.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Mi Blog</h1>
+      <p>Rutbel Carlos Ttito Campos</p>
+    </header>
+
+    <section class="navegacion">
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./Hardware.html">Hardware</a>
+        <a href="./Software.html">Software</a>
+        <a href="./Programación.html">Programación</a>
+      </nav>
+    </section>
+    <main class ="main">
+      <section class = "contenido">
+        <div class ="card" id="p">
+          <h2>Estructuras de datos en Sistemas operativos</h2>
+          <a href = "https://www.questionpro.com/blog/wp-content/uploads/2023/05/2383-Portad-estructuras-de-datos.jpg">
+            <img src="https://www.questionpro.com/blog/wp-content/uploads/2023/05/2383-Portad-estructuras-de-datos.jpg" width="80%" height="80%">
+          </a>
+          <p>
+            Las estructuras de datos en los sistemas operativos son fundamentales para manejar eficientemente grandes cantidades de datos y realizar operaciones rápidas y precisas. Estas estructuras permiten organizar, almacenar y recuperar datos de manera efectiva, lo que es crucial para el funcionamiento de los sistemas operativos y la programación en general
+          </p>
+          <hr>
+        </div>
+        <div class="card">
+          <h2>Algunas estructuras de datos</h2>
+          <ol>
+            <li><strong>Listas y Colas:</strong>
+              <ul>
+                <li>Listas Enlazadas: Se utilizan para mantener listas de elementos dinámicamente asignados en la memoria.</li>
+                <li>Colas: Estructuras FIFO (primero en entrar, primero en salir) utilizadas para gestionar tareas pendientes, procesos en espera, etc.</li>
+              </ul>
+            </li>
+            <li><strong>Pilas:</strong>
+              <p>Estructuras LIFO (último en entrar, primero en salir) utilizadas para gestionar llamadas a funciones, manejo de interrupciones, entre otras.</p>
+            </li>
+            <li><strong>Árboles:</strong>
+              <ul>
+                  <li>Árboles de Procesos: Se utilizan para representar la jerarquía de procesos en el sistema operativo.</li>
+                  <li>Árboles de Directorios: Estructuras que representan la estructura de directorios y archivos en un sistema de archivos.</li>
+              </ul>
+          </li>
+          
+          <li><strong>Tablas:</strong>
+              <ul>
+                  <li>Tabla de Procesos: Una tabla que mantiene información sobre todos los procesos en ejecución, como identificadores, estados y prioridades.</li>
+                  <li>Tabla de Archivos: Se utiliza para gestionar información sobre archivos abiertos, incluyendo descriptores de archivos y permisos.</li>
+              </ul>
+          </li>
+          
+          <li><strong>Buffers y Colas de Mensajes:</strong>
+              <ul>
+                  <li>Buffers de Entrada/Salida: Estructuras utilizadas para gestionar la comunicación entre dispositivos de entrada/salida y la memoria principal.</li>
+                  <li>Colas de Mensajes: Utilizadas para facilitar la comunicación entre procesos a través de mensajes.</li>
+              </ul>
+          </li>
+          
+          <li><strong>Tablas de Paginación y Segmentación:</strong>
+              <ul>
+                  <li>Tabla de Paginación: Se utiliza en la gestión de memoria virtual para mapear direcciones virtuales a direcciones físicas.</li>
+                  <li>Tabla de Segmentación: Se utiliza en sistemas que implementan la segmentación de memoria.</li>
+              </ul>
+          </li>
+          
+          <li><strong>Listas de Espera y Planificación de Procesos:</strong>
+              <ul>
+                  <li>Listas de Espera de Eventos: Utilizadas para gestionar procesos en espera de eventos como señales, interrupciones, etc.</li>
+                  <li>Colas de Planificación: Estructuras utilizadas para implementar algoritmos de planificación de procesos.</li>
+              </ul>
+          </li>          
+          </ol>
+          <hr>
+        </div>
+        <div class="card">
+          <h2>Ejemplo: Listas y colas de procesos</h2>
+          <p>El planificador de procesos selecciona entre los procesos disponibles para la siguiente ejecución en el procesador con el objetivo de maximizar el uso de la CPU e intercalar rápidamente los procesos.</p>
+          <p><strong>Objetivo:</strong> Maximizar el uso de la CPU, intercalar rápidamente los procesos al procesador.</p>
+          <img src="../images/so-listas-colas.png">
+          <p>Los procesos, en los distintos estados que tienen, son agrupados en listas o colas:</p>
+          <ul>
+              <li><strong>Lista de procesos del sistema (job queue):</strong> En esta lista están todos los procesos del sistema. Al crearse un nuevo proceso, se agrega el PCB a esta lista. Cuando el proceso termina su ejecución, es borrado.</li>
+              <li><strong>Cola de procesos listos (ready queue):</strong> Conjunto de todos los procesos que residen en la memoria principal, listos y esperando para ejecutarse. La estructura de esta cola dependerá de la estrategia de planificación utilizada.</li>
+              <li><strong>Colas de espera de dispositivos (device queue):</strong> Conjunto de procesos que esperan por un dispositivo de E/S particular. Cada dispositivo de E/S tendrá su cola de espera.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="navegacion">
+      <a href="../index.html">->Volver A La Página Principal</a>
+    </footer>
+  </body>
+</html>
+
